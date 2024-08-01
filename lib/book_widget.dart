@@ -27,7 +27,9 @@ class BookWidget extends StatelessWidget {
                 text: "$title\n",
                 style: const TextStyle(
                     color: Colors.red, fontWeight: FontWeight.bold)),
-            TextSpan(text: description, style: const TextStyle(fontSize: 12))
+            TextSpan(
+                text: description,
+                style: const TextStyle(fontSize: 12, color: Colors.black))
           ]))
         ],
       ),

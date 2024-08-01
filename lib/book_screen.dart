@@ -48,7 +48,10 @@ class BookScreen extends ConsumerWidget {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.black),
-                child: const Text("책 추가 페이지 이동"))
+                child: const Text(
+                  "책 추가 페이지 이동",
+                  style: TextStyle(color: Colors.black),
+                ))
           ],
         ),
       ),
