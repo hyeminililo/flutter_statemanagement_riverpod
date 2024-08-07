@@ -11,28 +11,27 @@ class BookWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-          border: Border.all(color: Colors.white),
-          borderRadius: BorderRadius.circular(30)),
-      child: Row(
-        children: [
-          const Icon(Icons.book_rounded),
-          const SizedBox(
-            width: 16,
-          ),
-          RichText(
-              text: TextSpan(children: [
-            TextSpan(
-                text: "$title\n",
-                style: const TextStyle(
-                    color: Colors.red, fontWeight: FontWeight.bold)),
-            TextSpan(
-                text: description,
-                style: const TextStyle(fontSize: 12, color: Colors.black))
-          ]))
-        ],
-      ),
-    );
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+            border: Border.all(color: Colors.white),
+            borderRadius: BorderRadius.circular(30)),
+        child: Row(
+          children: [
+            const Icon(Icons.book_rounded),
+            const SizedBox(
+              width: 16,
+            ),
+            RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                  text: "$title\n",
+                  style: const TextStyle(
+                      color: Colors.red, fontWeight: FontWeight.bold)),
+              TextSpan(
+                  text: description,
+                  style: const TextStyle(fontSize: 12, color: Colors.black))
+            ]))
+          ],
+        ));
   }
 }
