@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+// BookWidget 은 타이틀 리스트에 사용되는 클래스
+
 class BookWidget extends StatelessWidget {
   final String title;
   final String description;
